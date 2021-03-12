@@ -31,6 +31,3 @@ def GMDN(nums, limit):
         result = _geothmetic_meandian(result)
         
     raise ValueError(F"Results didn't converge in {MAX_RUNS} applications")
-    
-if __name__ == '__main__':
-    print(GMDN((1, 1, 2, 3, 5), 0.0001))

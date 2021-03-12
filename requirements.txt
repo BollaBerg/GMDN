@@ -1,0 +1,2 @@
+# Using pytest to run tests
+pytest==6.2.2
