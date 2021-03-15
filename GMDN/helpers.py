@@ -16,7 +16,7 @@ def _median(nums):
 def geothmetic_meandian(nums):
     return (_arithmetic_mean(nums), _geometric_mean(nums), _median(nums))
 
-def GMDN(nums, limit):
+def GMDN(nums, limit=0.00001):
     """An implementation of https://xkcd.com/2435/ """
     MAX_RUNS = sys.maxsize * 2 + 1
 
