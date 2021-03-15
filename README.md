@@ -1,6 +1,13 @@
 # GMDN
 A python implementation of XKCD's Geothmetic Meandian ( https://xkcd.com/2435/ )
 
+## How to get
+The package can be found on PyPi:
+```sh
+pip install GMDN
+```
+
+## How to use
 To get the Geothmetic Meandian of an iterable of numbers, simply run GMDN.GMDN on the iterable.
 ```python
 >>> from GMDN import GMDN
