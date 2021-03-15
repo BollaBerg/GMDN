@@ -13,14 +13,14 @@ def _geometric_mean(nums):
 def _median(nums):
     return statistics.median(nums)
 
-def _geothmetic_meandian(nums):
+def geothmetic_meandian(nums):
     return (_arithmetic_mean(nums), _geometric_mean(nums), _median(nums))
 
 def GMDN(nums, limit):
     """An implementation of https://xkcd.com/2435/ """
     MAX_RUNS = sys.maxsize * 2 + 1
 
-    result = _geothmetic_meandian(nums)
+    result = geothmetic_meandian(nums)
     for _ in range(MAX_RUNS):
         max_value = max(result)
         min_value = min(result)
@@ -28,6 +28,6 @@ def GMDN(nums, limit):
         if max_value - min_value <= limit:
             return _median(result)
         
-        result = _geothmetic_meandian(result)
+        result = geothmetic_meandian(result)
         
     raise ValueError(F"Results didn't converge in {MAX_RUNS} applications")
