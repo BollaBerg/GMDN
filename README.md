@@ -1,7 +1,7 @@
 # GMDN
 A python implementation of XKCD's Geothmetic Meandian ( https://xkcd.com/2435/ )
 
-Simply run 
+To get the Geothmetic Meandian of an iterable of numbers, simply run GMDN.GMDN on the iterable.
 ```python
 >>> from GMDN import GMDN
 >>> GMDN([1, 1, 2, 3, 5])
